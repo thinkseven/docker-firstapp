@@ -13,7 +13,7 @@
     Feeds used:
         https://api.nuget.org/v3/index.json
 
-    xxxx-MacBook-Pro:~ xxxxxx$ **dotnet build**
+    xxxx-MacBook-Pro:~ xxxxxx$ dotnet build
     Microsoft (R) Build Engine version 15.1.548.43366
     Copyright (C) Microsoft Corporation. All rights reserved.
 
