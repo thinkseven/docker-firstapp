@@ -1,6 +1,6 @@
-## DOCKER
+## DOCKER DEMO
 
-# make sure locally projects looks good
+# Make sure locally projects looks good
 
     xxxx-MacBook-Pro:~ xxxxxx$ $ dotnet restore
     Restoring packages for /Users/xxxxxxxxxx/Documents/Projects/firstApp/firstApp.csproj...
@@ -31,11 +31,11 @@
     Application started. Press Ctrl+C to shut down.
     ^CApplication is shutting down...
 
-# create Dockerfile
+# Create Dockerfile
 
     refer file Dockerfile for more information
 
-# run below commands to create docker image
+# Run below commands to create docker image
 
     xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ docker build -t firstapp:v0.1 .
     Sending build context to Docker daemon 578.6 kB
@@ -111,7 +111,7 @@
     Successfully built 32918a6601b5
     xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ 
 
-# run below commands to run docker image
+# Run below commands to run docker image
 
     xxxxxs-MacBook-Pro:firstApp xxxxxxx$ docker run -it firstapp:v0.1
     Hosting environment: Production
@@ -146,10 +146,8 @@
     OS/Arch:      linux/amd64
     Experimental: true
 
-# how to ensure docker image is running
-    Vinods-MacBook-Pro:~ vchandra$ clear
-
-    Vinods-MacBook-Pro:~ vchandra$ docker ps
+# How to ensure docker image is running
+    xxxxxs-MacBook-Pro:~ xxxxxxxxx$ clear
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                    NAMES
     fdc37cc2b491        firstapp:v0.1       "dotnet run"        About a minute ago   Up About a minute   0.0.0.0:5000->5000/tcp   nostalgic_davinci
 
