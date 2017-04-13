@@ -2,7 +2,7 @@
 
 # Make sure locally projects looks good
 
-    xxxx-MacBook-Pro:~ xxxxxx$ $ dotnet restore
+    xxxx-MacBook-Pro:~ xxxxxx$ $ **dotnet restore**
     Restoring packages for /Users/xxxxxxxxxx/Documents/Projects/firstApp/firstApp.csproj...
     Lock file has not changed. Skipping lock file write. Path: /Users/xxxxxxxxxx/Documents/Projects/firstApp/obj/project.assets.json
     Restore completed in 823.47 ms for /Users/xxxxxxxxxx/Documents/Projects/firstApp/firstApp.csproj.
@@ -13,7 +13,7 @@
     Feeds used:
         https://api.nuget.org/v3/index.json
 
-    xxxx-MacBook-Pro:~ xxxxxx$ dotnet build
+    xxxx-MacBook-Pro:~ xxxxxx$ **dotnet build**
     Microsoft (R) Build Engine version 15.1.548.43366
     Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -24,7 +24,7 @@
         0 Error(s)
 
     Time Elapsed 00:00:01.70
-    xxxx-MacBook-Pro:~ xxxxxx$ dotnet run
+    xxxx-MacBook-Pro:~ xxxxxx$ **dotnet run**
     Hosting environment: Production
     Content root path: /Users/xxxxxxxxxx/Documents/Projects/firstApp
     Now listening on: http://*:5000
@@ -37,7 +37,7 @@
 
 # Run below commands to create docker image
 
-    xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ docker build -t firstapp:v0.1 .
+    xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ **docker build -t firstapp:v0.1 . **
     Sending build context to Docker daemon 578.6 kB
     Step 1/9 : FROM microsoft/dotnet:latest
     latest: Pulling from microsoft/dotnet
@@ -113,7 +113,7 @@
 
 # Run below commands to run docker image
 
-    xxxxxs-MacBook-Pro:firstApp xxxxxxx$ docker run -it firstapp:v0.1
+    xxxxxs-MacBook-Pro:firstApp xxxxxxx$ **docker run -it firstapp:v0.1**
     Hosting environment: Production
     Content root path: /app
     Now listening on: http://*:5000
@@ -122,13 +122,13 @@
 # Other userful docker commands
 
     Last login: Wed Apr 12 23:16:55 on ttys002
-    xxxx-MacBook-Pro:~ xxxxxx$ docker images
+    xxxx-MacBook-Pro:~ xxxxxx$ **docker images**
     REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
     firstapp            v0.1                32918a6601b5        18 seconds ago      880 MB
     microsoft/dotnet    latest              d4fa886c8c0b        4 hours ago         879 MB
     xxxx-MacBook-Pro:~ xxxxxx$ docker ps
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-    xxxx-MacBook-Pro:~ xxxxxx$ docker version
+    xxxx-MacBook-Pro:~ xxxxxx$ **docker version**
     Client:
     Version:      17.03.1-ce
     API version:  1.27
@@ -147,7 +147,7 @@
     Experimental: true
 
 # How to ensure docker image is running
-    xxxxxs-MacBook-Pro:~ xxxxxxxxx$ clear
+    xxxxxs-MacBook-Pro:~ xxxxxxxxx$ **docker ps**
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                    NAMES
     fdc37cc2b491        firstapp:v0.1       "dotnet run"        About a minute ago   Up About a minute   0.0.0.0:5000->5000/tcp   nostalgic_davinci
 
