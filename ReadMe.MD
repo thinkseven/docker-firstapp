@@ -1,4 +1,4 @@
-## DOCKER DEMO
+## DOCKER DEMO - Docker on MAC running .NET Core Application
 
 # Make sure locally projects looks good
 
