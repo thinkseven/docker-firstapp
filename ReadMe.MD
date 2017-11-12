@@ -1,6 +1,6 @@
 ## DOCKER DEMO - Docker on MAC running .NET Core Application
 
-# Make sure locally projects looks good
+# 1. Make sure locally projects looks good
 
     xxxx-MacBook-Pro:~ xxxxxx$ $ dotnet restore
     Restoring packages for /Users/xxxxxxxxxx/Documents/Projects/firstApp/firstApp.csproj...
@@ -31,11 +31,11 @@
     Application started. Press Ctrl+C to shut down.
     ^CApplication is shutting down...
 
-# Create Dockerfile
+# 2. Create Dockerfile
 
     refer file Dockerfile for more information
 
-# Run below commands to create docker image
+# 3. Run below commands to create docker image
 
     xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ docker build -t firstapp:v0.1 .
     Sending build context to Docker daemon 578.6 kB
@@ -111,7 +111,7 @@
     Successfully built 32918a6601b5
     xxxxxs-MacBook-Pro:firstApp xxxxxxxxxx$ 
 
-# Run below commands to run docker image
+# 3. Run below commands to run docker image
 
     xxxxxs-MacBook-Pro:firstApp xxxxxxx$ docker run -it firstapp:v0.1
     Hosting environment: Production
@@ -119,7 +119,7 @@
     Now listening on: http://*:5000
     Application started. Press Ctrl+C to shut down.
 
-# Other userful docker commands
+# 4. Other userful docker commands
 
     Last login: Wed Apr 12 23:16:55 on ttys002
     xxxx-MacBook-Pro:~ xxxxxx$ docker images
@@ -146,7 +146,7 @@
     OS/Arch:      linux/amd64
     Experimental: true
 
-# How to ensure docker image is running
+# 5. How to ensure docker image is running
     xxxxxs-MacBook-Pro:~ xxxxxxxxx$ docker ps
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                    NAMES
     fdc37cc2b491        firstapp:v0.1       "dotnet run"        About a minute ago   Up About a minute   0.0.0.0:5000->5000/tcp   nostalgic_davinci
